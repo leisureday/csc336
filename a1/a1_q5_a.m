@@ -1,1 +1,1 @@
-for x = -25:25    RE = (exp1(x) - exp(x))/exp(x);    fprintf('x: %i; relative error: %f\n', x, RE);end
+for x = -25:25    RE = (exp1(x) - exp(x))/exp(x);    fprintf('x: %i; relative error: %.10f\n', x, RE);end

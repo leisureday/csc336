@@ -1,1 +1,1 @@
-function y = exp1(x)old_sum = 0;new_sum = 0;for k = 1    new_sum = old_sum + (x^k)/factorial(k);    if new_sum == old_sum        break;    end    old_sum = new_sum;endy = new_sum;
+function y = exp1(x)old_sum = -1;new_sum = 0;k = 0;while old_sum ~= new_sum    old_sum = new_sum;    new_sum = new_sum + (x^k)/factorial(k);    k = k+1;endy = new_sum;
