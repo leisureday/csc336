@@ -1,0 +1,10 @@
+iters = 5;
+xns = zeros(iters+1, 1); xns(1) = 1;
+ns = (0:iters)';
+fprintf('20s x(n) x(n)-sqrt(2)', n);
+for n = 1:iters
+    xnm1 = xns(n);
+    xn = xnm1-(xnm1^2-2)/(2*xnm1);
+    xns(n+1) = xn;
+end
+% T = table(ns, xns, xns-sqrt(2),'VariableNames',{'n' 'xn' 'xn_minus_sqrt2'})
