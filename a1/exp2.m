@@ -1,5 +1,4 @@
 function y = exp2(x)
-
 x = x/10;
 old_sum = -1;
 new_sum = 0;

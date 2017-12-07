@@ -5,6 +5,7 @@ end
 
 
 function find_root(method, iters, x)
+    % a): find root using newton's method
     if strcmp(method, 'newton')
         xns = zeros(iters+1, 1); xns(1) = x;
         fprintf('n%20s%20s\n','x(n)','x(n)-sqrt(2)');
@@ -16,6 +17,7 @@ function find_root(method, iters, x)
             fprintf('%d%20.16f%20.16f\n',n,xn,xn-sqrt(2));
         end
         fprintf('\n');
+
     elseif strcmp(method, 'secant')
         xns = zeros(iters+1, 1); xns(1) = x(1); xns(2) = x(2);
         fprintf('n%20s%20s\n','x(n)','x(n)-sqrt(2)');
